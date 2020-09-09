@@ -5,12 +5,12 @@ module.exports = {
       // 跨域
       proxy: {
         '/': {
-          target: 'http://yanyufanchen.gitee.io/vue-mart',
+          target: 'http://yanyufanchen.gitee.io/',
           changeOrigin: true
         }
       },
       before(app) {
-        app.get('/api/goods', (req, res) => {
+        app.get('/goods', (req, res) => {
           res.json({
             code: 0,
             data: [{

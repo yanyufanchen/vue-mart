@@ -25,5 +25,6 @@ v-1.0.0
 购物车
 v-1.0.3
 引入config配置文件，解决上线跨域问题
+详细说明：https://www.cnblogs.com/woshidouzia/p/9299174.html
 ```
 
