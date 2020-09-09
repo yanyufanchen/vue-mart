@@ -6,9 +6,12 @@
               v-for="(item,index) in goods"
               :key="index">
         <el-card>
-          <el-image fit="fit"
+          <img :src="item.img"
+               class="img"
+               alt="">
+          <!-- <el-image fit="fit"
                     class="img"
-                    :src="item.img"></el-image>
+                    :src="item.img"></el-image> -->
           <div class="message"
                style="padding:6px">
             <span class="goodtitle">{{item.title}}</span>
