@@ -2,6 +2,13 @@
 module.exports = {
   configureWebpack: {
     devServer: {
+      // 跨域
+      proxy: {
+        '/': {
+          target: 'http://yanyufanchen.gitee.io/vue-mart/',
+          changeOrigin: true
+        }
+      },
       before(app) {
         app.get('/api/goods', (req, res) => {
           res.json({

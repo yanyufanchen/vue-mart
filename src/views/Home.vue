@@ -37,7 +37,7 @@
   </div>
 </template>
 <script>
-import axios from 'axios'
+import { homeGoodsApi } from '@/api'
 export default {
   data () {
     return {
@@ -54,7 +54,7 @@ export default {
     // Cart
   },
   async created () {
-    const { data: res } = await axios.get('/api/goods')
+    const { data: res } = await homeGoodsApi()
     this.goods = res.data
   },
   methods: {
