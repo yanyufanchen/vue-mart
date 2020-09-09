@@ -12,7 +12,7 @@ if (location.hostname == 'localhost') { //测试环境
 axios.defaults.baseURL = baseUrl
 console.log(location.hostname, baseUrl, 'url')
 // #  配置 超时时间
-axios.defaults.timeout = 2500
+// axios.defaults.timeout = 2500
 // home栏
 export const homeGoodsApi = (params) => {
   return axios.get('/goods', params)
