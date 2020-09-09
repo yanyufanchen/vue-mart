@@ -3,12 +3,7 @@ module.exports = {
   configureWebpack: {
     devServer: {
       // 跨域
-      proxy: {
-        '/': {
-          target: 'http://yanyufanchen.gitee.io/',
-          changeOrigin: true
-        }
-      },
+
       before(app) {
         app.get('/goods', (req, res) => {
           res.json({
