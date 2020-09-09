@@ -5,7 +5,7 @@ module.exports = {
       // 跨域
       proxy: {
         '/': {
-          target: 'http://yanyufanchen.gitee.io/',
+          target: 'http://yanyufanchen.gitee.io/vue-mart',
           changeOrigin: true
         }
       },
